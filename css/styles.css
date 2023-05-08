@@ -1,0 +1,78 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --success: #31d0aa;
+  --main-text: #2e2f42;
+  --body-text: #434455;
+  --helper-text: #8e8f99;
+  --dark-background: #2e2f42;
+  --light-mode: #f4f4fd;
+}
+/* 
+#E7E9FC Accent
+#F4F4FD Light 
+#2E2F42 Modal overlay 
+#2E2F42 Hero background 
+#FFFFFF White background 
+#FCFCFC Modal background  */
+
+ul {
+  list-style: none;
+}
+
+/* Стилі для header */
+.logo {
+  color: var(--primary-brand);
+}
+.logo-studio {
+  color: var(--main-text);
+}
+.link-studio,
+.link-portfolio,
+.link-contacts {
+  color: #2e2f42;
+}
+.link-mail,
+.tel {
+  color: var(--body-text);
+}
+
+/* Стилі для hero */
+.hero {
+  background-color: var(--dark-background);
+}
+.text-hero {
+  color: #fff;
+}
+.button-hero {
+  background-color: var(--primary-brand);
+  color: #fff;
+}
+
+/* Стилі для секції */
+.list-advantages h3 {
+  color: var(--main-text);
+}
+.list-advantages p {
+  color: var(--body-text);
+}
+.secondary-headline {
+  color: var(--main-text);
+}
+/* Стилі для секції "Команда" */
+.team-members h3 {
+  color: var(--main-text);
+}
+.team-members p {
+  color: var(--body-text);
+}
+
+.footer {
+  background-color: var(--dark-background);
+}
+.footer .logo-studio {
+  color: var(--light-mode);
+}
+.slogan-footer {
+  color: var(--light-mode);
+}
