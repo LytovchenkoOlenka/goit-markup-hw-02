@@ -26,13 +26,8 @@ body {
   color: var(--main-text);
 }
 
-.links {
-  text-decoration: none;
-  color: var(--main-text);
-}
-
-.links:hover,
-.links:focus {
+.link-focus:hover,
+.link-focus:focus {
   color: var(--pressed-state);
 }
 
@@ -40,7 +35,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--body-text);
 }
 
 .button:hover,
@@ -131,6 +125,8 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  color: var(--main-text);
 }
 
 /* .body-text {
@@ -143,6 +139,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+
+  color: var(--main-text);
 }
 
 /*--------------Стилі для секції "Команда"----------*/
