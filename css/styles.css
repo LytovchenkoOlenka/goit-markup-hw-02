@@ -22,6 +22,7 @@ body {
 }
 .link {
   text-decoration: none;
+  color: var(--main-text);
 }
 
 .link:hover,
@@ -29,10 +30,11 @@ body {
   color: var(--pressed-state);
 }
 
-.text {
+.body-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--body-text);
 }
 
 .button:hover,
@@ -52,14 +54,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  color: var(--main-text);
 }
 .logo-web {
   color: var(--primary-brand);
 }
 
 .nav-links {
-  color: var(--main-text);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -125,9 +126,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-.title-text {
+/* .body-text {
   color: var(--body-text);
-}
+} */
 
 .secondary-headline {
   font-size: 36px;
@@ -139,8 +140,8 @@ body {
 
 /*--------------Стилі для секції "Команда"----------*/
 
-.team-members .title-item,
-.team-members .title-text {
+.team-title,
+.team-body {
   text-align: center;
 }
 
@@ -166,12 +167,4 @@ body {
   color: var(--primary-brand);
   background-color: var(--light-mode);
   border-color: var(--background-btn);
-}
-
-.link .title-item {
-  color: var(--main-text);
-}
-
-.link .title-text {
-  color: var(--body-text);
 }
