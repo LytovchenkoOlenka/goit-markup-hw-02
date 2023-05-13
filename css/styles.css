@@ -182,7 +182,3 @@ body {
   background-color: var(--light-mode);
   border-color: var(--background-btn);
 }
-
-.portfolio-title-item {
-  color: var(--main-text);
-}
