@@ -7,72 +7,171 @@
   --helper-text: #8e8f99;
   --dark-background: #2e2f42;
   --light-mode: #f4f4fd;
-}
-/* 
-#E7E9FC Accent
-#F4F4FD Light 
-#2E2F42 Modal overlay 
-#2E2F42 Hero background 
-#FFFFFF White background 
-#FCFCFC Modal background  */
-
-ul {
-  list-style: none;
+  --background-btn: #e7e9fc;
+  --main-bachkround: #fff;
+  --modal-background: #fcfcfc;
 }
 
-/* Стилі для header */
-.logo {
-  color: var(--primary-brand);
-}
-.logo-studio {
+/*  ----------Загальні стилі------- */
+body {
+  font-family: "Roboto", sans-serif;
   color: var(--main-text);
 }
-.link-studio,
-.link-portfolio,
-.link-contacts {
-  color: #2e2f42;
+.list {
+  list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--pressed-state);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--pressed-state);
+  color: #fff;
+}
+
+/* ----------Стилі для header -------*/
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--primary-brand);
+}
+
+.nav-links {
+  color: var(--main-text);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .link-mail,
 .tel {
   color: var(--body-text);
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-style: normal;
 }
 
-/* Стилі для hero */
+/* ----------Стилі для hero --------------------*/
+
 .hero {
   background-color: var(--dark-background);
 }
-.text-hero {
+.hero-title {
   color: #fff;
-}
-.button-hero {
-  background-color: var(--primary-brand);
-  color: #fff;
+
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 
-/* Стилі для секції */
-.list-advantages h3 {
-  color: var(--main-text);
+.hero-button {
+  background-color: var(--primary-brand);
+  color: #fff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
-.list-advantages p {
+
+/*------Стилі для секції Advantages------------*/
+/* Тут зібрані стилі, які використовуються для різних секцій в майбутньому*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.title-text {
   color: var(--body-text);
 }
+
 .secondary-headline {
-  color: var(--main-text);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
-/* Стилі для секції "Команда" */
-.team-members h3 {
-  color: var(--main-text);
-}
-.team-members p {
-  color: var(--body-text);
+
+/*--------------Стилі для секції "Команда"----------*/
+
+.team-members .title-item,
+.team-members .title-text {
+  text-align: center;
 }
 
 .footer {
   background-color: var(--dark-background);
 }
-.footer .logo-studio {
+.footer .logo {
   color: var(--light-mode);
 }
 .slogan-footer {
   color: var(--light-mode);
+}
+
+/* ----------PORTFOLIO---------- */
+
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--primary-brand);
+  background-color: var(--light-mode);
+  border-color: var(--background-btn);
+}
+
+.link .title-item {
+  color: var(--main-text);
+}
+
+.link .title-text {
+  color: var(--body-text);
 }
