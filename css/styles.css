@@ -8,14 +8,15 @@
   --dark-background: #2e2f42;
   --light-mode: #f4f4fd;
   --background-btn: #e7e9fc;
-  --main-bachkround: #fff;
+  --main-bachkround: #ffffff;
   --modal-background: #fcfcfc;
 }
 
 /*  ----------Загальні стилі------- */
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--main-text);
+  color: var(--body-text);
+  background-color: var(--main-bachkround);
 }
 .list {
   list-style: none;
@@ -25,8 +26,13 @@ body {
   color: var(--main-text);
 }
 
-.link:hover,
-.link:focus {
+.links {
+  text-decoration: none;
+  color: var(--main-text);
+}
+
+.links:hover,
+.links:focus {
   color: var(--pressed-state);
 }
 
@@ -46,18 +52,17 @@ body {
 /* ----------Стилі для header -------*/
 
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
-  color: var(--main-text);
-}
-.logo-web {
   color: var(--primary-brand);
+}
+.logo-studio {
+  color: var(--main-text);
 }
 
 .nav-links {
@@ -67,10 +72,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-.link-mail,
-.tel {
+.adress-item {
   color: var(--body-text);
+}
 
+.mail-tel {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -92,6 +98,7 @@ body {
 }
 
 .hero-button {
+  font-family: "Roboto", sans-serif;
   background-color: var(--primary-brand);
   color: #fff;
 
@@ -139,6 +146,13 @@ body {
 }
 
 /*--------------Стилі для секції "Команда"----------*/
+.team {
+  background-color: var(--light-mode);
+}
+
+.team-member {
+  background-color: var(--main-bachkround);
+}
 
 .team-title,
 .job-title {
@@ -148,7 +162,7 @@ body {
 .footer {
   background-color: var(--dark-background);
 }
-.footer .logo {
+.footer-logo-studio {
   color: var(--light-mode);
 }
 .slogan-footer {
@@ -158,11 +172,13 @@ body {
 /* ----------PORTFOLIO---------- */
 
 .portfolio-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
+  cursor: pointer;
 
   color: var(--primary-brand);
   background-color: var(--light-mode);
